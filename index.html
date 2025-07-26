@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pet-o-Builder</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <i class="fas fa-cat"></i>
+            <i class="fas fa-dog"></i>
+        </div>
+        <div class="nav-links">
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <div class="auth-buttons">
+                <a href="#" class="login">Log in</a>
+                <a href="#" class="signup">Sign up</a>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <div class="demo-mode">
+            This is demonstration mode. Sign up or Log in to get full functionality.
+        </div>
+
+        <section class="pet-information">
+            <h2>Pet Information</h2>
+            <div class="form-grid">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" placeholder="Enter pet's name">
+                </div>
+                <div class="form-group">
+                    <label for="age">Age</label>
+                    <select id="age">
+                        <option>Select</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="weight">Weight</label>
+                    <input type="number" id="weight" value="0.0" step="0.1">
+                </div>
+                <div class="form-group">
+                    <label for="bcs">BCS</label>
+                    <select id="bcs">
+                        <option>Select</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="mer">MER</label>
+                    <input type="number" id="mer" value="1200">
+                </div>
+            </div>
+        </section>
+
+        <section class="food-products">
+            <h2>Food Products</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Product</th>
+                        <th>Weight</th>
+                        <th>Energy</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Product Name 1</td>
+                        <td>100 g</td>
+                        <td>350 kcal</td>
+                        <td><button class="delete"><i class="fas fa-trash"></i></button></td>
+                    </tr>
+                    <tr>
+                        <td>Product Name 2</td>
+                        <td>50 g</td>
+                        <td>175 kcal</td>
+                        <td><button class="delete"><i class="fas fa-trash"></i></button></td>
+                    </tr>
+                </tbody>
+            </table>
+            <button class="add-product">+ Add Product</button>
+        </section>
+
+        <section class="nutrition-score">
+            <h2>Nutrition Score</h2>
+            <div class="score-circle">
+                <div class="percentage">75%</div>
+            </div>
+            <div class="score-details">
+                <div class="score-row">
+                    <span>Energy</span>
+                    <div class="score-bar" data-percentage="90%"></div>
+                    <span class="percentage">90%</span>
+                </div>
+                <div class="score-row">
+                    <span>Water</span>
+                    <div class="score-bar" data-percentage="60%"></div>
+                    <span class="percentage">60%</span>
+                </div>
+                <div class="score-row">
+                    <span>Protein</span>
+                    <div class="score-bar" data-percentage="85%"></div>
+                    <span class="percentage">85%</span>
+                </div>
+                <div class="score-row">
+                    <span>Lipids</span>
+                    <div class="score-bar" data-percentage="70%"></div>
+                    <span class="percentage">70%</span>
+                </div>
+                <div class="score-row">
+                    <span>Carbs</span>
+                    <div class="score-bar" data-percentage="95%"></div>
+                    <span class="percentage">95%</span>
+                </div>
+                <div class="score-row">
+                    <span>Minerals</span>
+                    <div class="score-bar" data-percentage="55%"></div>
+                    <span class="percentage">55%</span>
+                </div>
+                <div class="score-row">
+                    <span>Vitamins</span>
+                    <div class="score-bar" data-percentage="80%"></div>
+                    <span class="percentage">80%</span>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-links">
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Contact us</a>
+            <a href="#">Terms of Service</a>
+        </div>
+        <div class="copyright">© 2024 Pet-o-Builder. All rights reserved.</div>
+    </footer>
+</body>
+</html>
